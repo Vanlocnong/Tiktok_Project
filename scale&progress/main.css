@@ -1,0 +1,63 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.scale__animation{
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 3px solid black;
+    animation: scale__circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scale__circle{
+    from{
+        transform:  scale(3);
+    }
+
+    to{
+        transform: scale(0);
+    }
+}
+
+
+.progress__animation{
+    margin-top: 300px;
+    width: 600px;
+    height: 100px;
+    background-color: transparent;
+    border: 3px solid black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.loading{
+    width: 98%;
+    height: 80%;
+    background-color: black;
+    margin-left: 5px;
+    border-radius: inherit;
+    animation: progress 2s infinite;
+}
+
+
+@keyframes progress {
+    from{
+        width: 8%;
+
+    }
+
+    to{
+        width: 98%;
+    }
+}
